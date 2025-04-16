@@ -1,11 +1,11 @@
 export default async function handler(req, res) {
-  const targetUrl = `https://yourchat.onrender.com${req.url}`;
+  const targetUrl = `https://stealthchat.onrender.com${req.url}`;
   
   const fetchOptions = {
     method: req.method,
     headers: {
       ...req.headers,
-      host: 'yourchat.onrender.com'
+      host: 'https://stealthchat.onrender.com'
     },
     body: ['GET', 'HEAD'].includes(req.method) ? undefined : req.body
   };
